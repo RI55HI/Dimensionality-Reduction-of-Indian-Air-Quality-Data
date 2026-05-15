@@ -27,11 +27,7 @@ A **K-Means clustering** extension is included as a second multivariate method t
 ```
 aqi-pca-project/
 │
-├── aqi_india_38cols_knn_final.csv   # Dataset (download from Kaggle — see below)
-├── aqi_pca_analysis.R               # Full R analysis script
-├── aqi_pca_report.pdf               # Compiled report (PDF)
-├── aqi_pca_report.tex               # LaTeX source for the report
-├── AQI_PCA_Presentation.pptx        # Presentation slides with speaker notes
+├── R_ANSLYSIS.R                     # Full R analysis script
 ├── README.md                        # This file
 │
 └── figures/
