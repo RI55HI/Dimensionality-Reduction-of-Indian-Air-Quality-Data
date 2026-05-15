@@ -1,10 +1,7 @@
 # =============================================================================
-# Multivariate Modelling Assignment
+
 # Title:  Dimensionality Reduction of Indian Air Quality Data using PCA
-# Author: Rishikesh Dharane 
-# Dataset: aqi_india_38cols_knn_final.csv
-# Method: Principal Component Analysis (PCA) + K-Means Clustering (Extension)
-# =============================================================================
+
 
 
 # =============================================================================
