@@ -1,9 +1,6 @@
 # Dimensionality Reduction of Indian Air Quality Data Using PCA
 
-**Module:** Multivariate Modelling (MSc Data Science, Semester 2)  
-**Author:** Rishikesh Mahendra Dharane  
-**Institution:** Munster Technological University  
-**Date:** April 2026
+
 
 ---
 
