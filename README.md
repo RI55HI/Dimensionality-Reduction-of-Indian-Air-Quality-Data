@@ -22,3 +22,38 @@ To replicate this analysis, follow these steps:
 2. **Library Installation:** Install the required R packages:
    ```r
    install.packages(c("tidyverse", "janitor", "corrplot", "psych", "FactoMineR", "factoextra"))
+B. Configuration
+Open R00277319_ANALYSIS.R and update the file path in Section 1:
+
+R
+# Update this line with your local directory path
+df_raw <- read_csv("your_path/aqi_india_38cols_knn_final.csv")
+C. Run the Analysis
+Execute the script to automatically trigger the following workflow:
+
+Data Sampling: A reproducible random sample of 50,000 rows is taken for computational efficiency.
+
+Suitability Assessment: Runs KMO (Sampling Adequacy) and Bartlett’s Test (Sphericity).
+
+PCA Execution: Generates 5 Principal Components explaining 71.5% of the variance.
+
+Visualizations: Automatically generates:
+
+Correlation Heatmaps: Showing pollutant inter-dependencies.
+
+Scree Plots: Identifying the optimal number of components.
+
+PCA Biplots: Mapping variables and individuals in reduced dimensions.
+
+K-Means Elbow Plots: Visualizing cluster optimization.
+
+Sensitivity Analysis Results: Comparing scaled vs. unscaled data.
+
+4. Key Findings
+Pollution Clustering: High pollution levels are strongly correlated across multiple species (PM, CO, NO2), suggesting common combustion sources like traffic and industry.
+
+Independence: Weather factors such as wind and pressure (PC3) are largely independent of the core pollution load (PC1), meaning hazardous air quality can occur across various weather conditions.
+
+AQI Alignment: The mathematical clustering model effectively distinguishes "Good" air quality zones from "Unhealthy" or "Hazardous" regions, showing high alignment with official health standards.
+
+Methodological Validation: Sensitivity tests confirmed that Z-score standardization was mandatory; without it, high-variance variables like atmospheric pressure would have disproportionately biased the entire model.
